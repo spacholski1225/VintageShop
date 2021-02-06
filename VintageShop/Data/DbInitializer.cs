@@ -10,6 +10,7 @@ namespace VintageShop.Data
     {
         public static void Initialize(VintageShopContext context)
         {
+            context.Database.EnsureCreated();
             if (context.Arthists.Any())
             {
                 return;
