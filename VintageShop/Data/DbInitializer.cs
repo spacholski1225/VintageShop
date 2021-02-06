@@ -17,7 +17,7 @@ namespace VintageShop.Data
             }
             var arthists = new Arthist[]
             {
-                new Arthist{FirstName="Marilyn", LastName="Manson",Alias=null }
+                new Arthist{FirstName="Brian", LastName="Warner",Alias="Marilyn Manson" }
             };
             foreach (var arthist in arthists)
             {
@@ -28,7 +28,7 @@ namespace VintageShop.Data
            
             var albums = new Album[]
             {
-                new Album{Name="Antichrist Superstar",}
+                new Album{ArthistID = 1, Name="Antichrist Superstar"}
             };
             foreach (var album in albums)
             {
