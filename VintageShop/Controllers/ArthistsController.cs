@@ -43,6 +43,25 @@ namespace VintageShop.Controllers
             return View(arthist);
         }
 
+        // GET: Arthists/Details/5
+        public async Task<IActionResult> AllAlbums(int? id, int? albumId)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var arthist = await _context.Arthists
+               //
+
+            if (arthist == null)
+            {
+                return NotFound();
+            }
+
+            return View(arthist);
+        }
+
         // GET: Arthists/Create
         public IActionResult Create()
         {

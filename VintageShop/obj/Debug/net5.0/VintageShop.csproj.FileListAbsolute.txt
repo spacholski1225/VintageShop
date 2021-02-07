@@ -175,3 +175,4 @@ D:\Projects\VintageShop\VintageShop\obj\Debug\net5.0\Razor\Views\Albums\Delete.c
 D:\Projects\VintageShop\VintageShop\obj\Debug\net5.0\Razor\Views\Albums\Details.cshtml.g.cs
 D:\Projects\VintageShop\VintageShop\obj\Debug\net5.0\Razor\Views\Albums\Edit.cshtml.g.cs
 D:\Projects\VintageShop\VintageShop\obj\Debug\net5.0\Razor\Views\Albums\Index.cshtml.g.cs
+D:\Projects\VintageShop\VintageShop\obj\Debug\net5.0\Razor\Views\Arthists\AllAlbums.cshtml.g.cs
