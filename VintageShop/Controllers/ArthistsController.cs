@@ -44,15 +44,19 @@ namespace VintageShop.Controllers
         }
 
         // GET: Arthists/Details/5
-        public async Task<IActionResult> AllAlbums(int? id, int? albumId)
+        public async Task<IActionResult> AllAlbums(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var arthist = await _context.Arthists
-               //
+                var arthist = await _context.Arthists.Include(x => x.Albums)
+                    .FirstOrDefaultAsync(m => m.ID == id);
+
+          
+
+
 
             if (arthist == null)
             {
