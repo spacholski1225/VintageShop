@@ -6,10 +6,34 @@
 
 <h1>AllAlbums</h1>
 
-<div>
+<div class="table-responsive">
     <h4>Arthist</h4>
     <hr />
-    <dl class="row">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(m => m.Alias)</th>
+                <th>@Html.DisplayFor(m => m.Alias)</th>
+            </tr>
+        </thead>
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.Albums)</th>
+
+            @foreach (var item in Model.Albums)
+            {
+                <th>@item.Name</th>
+
+            }
+
+        </tr>
+
+    </table>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+@*<dl class="row">
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.FirstName)
         </dt>
@@ -38,9 +62,4 @@
             }
         </dd>
 
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+    </dl>*@
