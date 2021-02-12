@@ -1,8 +1,17 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<VintageShop.Models.Album>
+@{
+    ViewData["Title"] = "Albums";
 }
+<h1>@ViewData["Title"]</h1>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@foreach (var item in Model)// null ref exception
+{
+    <div class="gallery">
+        <a asp-controller="Albums" asp-action="Details" asp-route-id="@item.AlbumID">
+            <img src=@item.ImageUrl alt="img" width="600" height="400">
+        </a>
+        <div class="desc">@item.Name</div>
+    </div>
+
+}
+@*przebudowac aplikacje na dodawanie zdjec recznie przez panel admina https://www.c-sharpcorner.com/article/upload-and-display-image-in-asp-net-core-3-1/*@

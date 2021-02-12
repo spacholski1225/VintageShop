@@ -30,12 +30,12 @@ namespace VintageShop.Data
            
             var albums = new Album[]
             {
-                new Album{ArthistID = 1, Name="Antichrist Superstar"},
-                new Album{ArthistID = 2, Name="Egzotyka"},
-                new Album{ArthistID = 2, Name="Erotyka"},
-                new Album{ArthistID = 3, Name="Klauzula sumienia"},
-                new Album{ArthistID = 3, Name="Koledzy"},
-                new Album{ArthistID = 3, Name="The Ant"},
+                new Album{ArthistID = 1, Name="Antichrist Superstar", ImageUrl="~/images/manson_as.png"},
+                new Album{ArthistID = 2, Name="Egzotyka", ImageUrl="~/images/q_egz.jpg" },
+                new Album{ArthistID = 2, Name="Erotyka", ImageUrl="~/images/q_erotyka.jpg"},
+                new Album{ArthistID = 3, Name="Klauzula sumienia", ImageUrl="~/images/malenczuk_klauzula.jpg"},
+                new Album{ArthistID = 1, Name="Eat Me, Drink Me", ImageUrl="~/images/manson_eat.png"},
+                new Album{ArthistID = 3, Name="The Ant", ImageUrl="~/images/malenczuk_ant.png"},
             };
             foreach (var album in albums)
             {

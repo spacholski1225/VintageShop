@@ -10,6 +10,8 @@ namespace VintageShop.Models
 
         public string Name{ get; set; }
 
+        public string ImageUrl { get; set; }
+
         public Arthist Arthist { get; set; }
     }
 }

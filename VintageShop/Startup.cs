@@ -23,8 +23,6 @@ namespace VintageShop
             services.AddDbContext<VintageShopContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            
-
             services.AddControllersWithViews();
         }
 
