@@ -27,7 +27,7 @@ namespace VintageShop.Data
             }
             context.SaveChanges();
 
-           
+
             var albums = new Album[]
             {
                 new Album{ArthistID = 1, Name="Antichrist Superstar", ImageUrl="~/images/manson_as.png"},
@@ -40,6 +40,16 @@ namespace VintageShop.Data
             foreach (var album in albums)
             {
                 context.Albums.Add(album);
+            }
+            context.SaveChanges();
+
+            var userAccounts = new UserAccount[]
+            {
+                new UserAccount{IdUser = 1, UserName = "admin", UserPassword="admin"}
+            };
+            foreach (var user in userAccounts)
+            {
+                context.UserAccount.Add(user);
             }
             context.SaveChanges();
         }

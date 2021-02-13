@@ -177,4 +177,9 @@ D:\Projects\VintageShop\VintageShop\obj\Debug\net5.0\Razor\Views\Albums\Edit.csh
 D:\Projects\VintageShop\VintageShop\obj\Debug\net5.0\Razor\Views\Albums\Index.cshtml.g.cs
 D:\Projects\VintageShop\VintageShop\obj\Debug\net5.0\Razor\Views\Arthists\AllAlbums.cshtml.g.cs
 D:\Projects\VintageShop\VintageShop\obj\Debug\net5.0\Razor\Views\Home\Albums.cshtml.g.cs
-D:\Projects\VintageShop\VintageShop\obj\Debug\net5.0\Razor\Views\Home\LoginForm.cshtml.g.cs
+D:\Projects\VintageShop\VintageShop\obj\Debug\net5.0\Razor\Views\UserAccounts\Create.cshtml.g.cs
+D:\Projects\VintageShop\VintageShop\obj\Debug\net5.0\Razor\Views\UserAccounts\Delete.cshtml.g.cs
+D:\Projects\VintageShop\VintageShop\obj\Debug\net5.0\Razor\Views\UserAccounts\Details.cshtml.g.cs
+D:\Projects\VintageShop\VintageShop\obj\Debug\net5.0\Razor\Views\UserAccounts\Edit.cshtml.g.cs
+D:\Projects\VintageShop\VintageShop\obj\Debug\net5.0\Razor\Views\UserAccounts\Index.cshtml.g.cs
+D:\Projects\VintageShop\VintageShop\obj\Debug\net5.0\Razor\Views\UserAccounts\LoginForm.cshtml.g.cs
