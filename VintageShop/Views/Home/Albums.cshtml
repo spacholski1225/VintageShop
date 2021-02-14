@@ -1,0 +1,16 @@
+﻿@model IEnumerable<VintageShop.Models.Album>
+@{
+    ViewData["Title"] = "Albums";
+}
+<h1>@ViewData["Title"]</h1>
+
+@foreach (var item in Model)// null ref exception
+{
+    <div class="gallery">
+        <a asp-action="Details" asp-route="@item.AlbumID">
+            <img src="@item.ImageUrl" alt="img" width="600" height="400">
+        </a>
+        <div class="desc">@item.Arthist</div>
+    </div>
+
+}
