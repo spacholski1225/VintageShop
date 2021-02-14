@@ -22,10 +22,18 @@ namespace VintageShop.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string searchString)
         {
-            var vintageShopContext = _context.Albums;
-            return View(vintageShopContext.ToList());
+            ViewData["CurrentFilter"] = searchString;
+
+            var albums = from x in _context.Albums select x;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                albums = albums.Where(x => x.Name.Contains(searchString) || x.Arthist.Alias.Contains(searchString));
+            }
+
+            return View(albums.ToList());
         }
 
         public IActionResult Privacy()

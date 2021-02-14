@@ -31,12 +31,12 @@ namespace VintageShop.Data
 
             var albums = new Album[]
             {
-                new Album{ArthistID = 1, Name="Antichrist Superstar", ImageUrl="~/images/manson_as.png"},
-                new Album{ArthistID = 2, Name="Egzotyka", ImageUrl="~/images/q_egz.jpg" },
-                new Album{ArthistID = 2, Name="Erotyka", ImageUrl="~/images/q_erotyka.jpg"},
-                new Album{ArthistID = 3, Name="Klauzula sumienia", ImageUrl="~/images/malenczuk_klauzula.jpg"},
-                new Album{ArthistID = 1, Name="Eat Me, Drink Me", ImageUrl="~/images/manson_eat.png"},
-                new Album{ArthistID = 3, Name="The Ant", ImageUrl="~/images/malenczuk_ant.png"},
+                new Album{ArthistID = 1, Name="Antichrist Superstar", ImageUrl="https://www.revolvermag.com/sites/default/files/media/images/article/manson_0.jpg"},
+                new Album{ArthistID = 2, Name="Egzotyka", ImageUrl="https://cdn.shoplo.com/9646/products/th2048/aaaf/457-800x800_product_media_46001-47000_towar_44967_115781.jpg"},
+                new Album{ArthistID = 2, Name="Erotyka", ImageUrl="https://www.popkiller.pl/sites/default/files/images/quebonafide-erotyka.jpg"},
+                new Album{ArthistID = 3, Name="Klauzula sumienia", ImageUrl="https://ecsmedia.pl/c/klauzula-sumienia-b-iext66104422.jpg"},
+                new Album{ArthistID = 1, Name="Eat Me, Drink Me", ImageUrl="https://upload.wikimedia.org/wikipedia/en/d/d6/Marilyn_Manson_-_Eat_Me_Drink_Me.png"},
+                new Album{ArthistID = 3, Name="The Ant", ImageUrl="https://magazyngitarzysta.pl/i/images/0/3/9/d2FjPTQ0OXgx_src_125039-malenczuk-cd.jpg"},
             };
             foreach (var album in albums)
             {

@@ -16,11 +16,9 @@ namespace VintageShop.Data
         {
         }
 
-        public DbSet<VintageShopUser> VintageShopUsers { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-            builder.Entity<VintageShopUser>().ToTable("VintageShopUsers");
         }
     }
 }
