@@ -12,13 +12,13 @@ namespace VintageShop.Data
         public DbSet<Arthist> Arthists { get; set; }
         public DbSet<Album> Albums { get; set; }
 
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Arthist>().ToTable("Arthist");
             modelBuilder.Entity<Album>().ToTable("Album");
         }
 
-        public DbSet<VintageShop.Models.UserAccount> UserAccount { get; set; }
     }
 
 }

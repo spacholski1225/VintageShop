@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using VintageShop.Areas.Identity.Data;
 using VintageShop.Models;
 
 namespace VintageShop.Data
@@ -43,15 +44,8 @@ namespace VintageShop.Data
             }
             context.SaveChanges();
 
-            var userAccounts = new UserAccount[]
-            {
-                new UserAccount{IdUser = 1, UserName = "admin", UserPassword="admin"}
-            };
-            foreach (var user in userAccounts)
-            {
-                context.UserAccount.Add(user);
-            }
-            context.SaveChanges();
+           
+          
         }
     }
 }
