@@ -62,6 +62,24 @@ namespace VintageShop.Migrations
                     b.ToTable("Arthist");
                 });
 
+            modelBuilder.Entity("VintageShop.Models.UserAccount", b =>
+                {
+                    b.Property<int>("IdUser")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserPassword")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdUser");
+
+                    b.ToTable("UserAccount");
+                });
+
             modelBuilder.Entity("VintageShop.Models.Album", b =>
                 {
                     b.HasOne("VintageShop.Models.Arthist", "Arthist")

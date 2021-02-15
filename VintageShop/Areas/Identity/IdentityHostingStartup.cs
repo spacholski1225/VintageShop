@@ -20,12 +20,7 @@ namespace VintageShop.Areas.Identity
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("AuthDbContextConnection")));
 
-                services.AddDefaultIdentity<VintageShopUser>(options => {
-                    options.SignIn.RequireConfirmedAccount = false;
-                    options.Password.RequireUppercase = false;
-                    options.Password.RequireLowercase = false;
-                    options.Password.RequireNonAlphanumeric = false;
-                    })
+                services.AddDefaultIdentity<VintageShopUser>(options => options.SignIn.RequireConfirmedAccount = true)
                     .AddEntityFrameworkStores<AuthDbContext>();
             });
         }
