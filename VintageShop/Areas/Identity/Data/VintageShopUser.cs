@@ -12,10 +12,9 @@ namespace VintageShop.Areas.Identity.Data
     {
         [PersonalData]
         [Column(TypeName = "navchar(100)")]
-        public string  FirstName { get; set; }
+        public string  Name { get; set; }
 
         [PersonalData]
-        [Column(TypeName = "navchar(100)")]
-        public string  LastName { get; set; }
+        public string  Password { get; set; }
     }
 }
