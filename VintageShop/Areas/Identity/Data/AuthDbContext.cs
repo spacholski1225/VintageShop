@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using VintageShop.Areas.Identity.Data;
+using VintageShop.Models;
 
 namespace VintageShop.Data
 {
@@ -16,9 +12,13 @@ namespace VintageShop.Data
         {
         }
 
+        public DbSet<Arthist> Arthists { get; set; }
+        public DbSet<Album> Albums { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+            builder.Entity<Arthist>().ToTable("Arthist");
+            builder.Entity<Album>().ToTable("Album");
         }
     }
 }
